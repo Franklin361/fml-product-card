@@ -19,7 +19,7 @@ export const ProductImage = ({ image, className, style }:Props) => {
     let imgToShow: string;
 
     if(image){ imgToShow = image }
-    else if(product.image) {imgToShow = product.image}
+    else if(product?.image) {imgToShow = product.image}
     else {imgToShow = noimage}
 
     return (
